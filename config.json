@@ -1,0 +1,26 @@
+{
+    "panelType": "xboard", // 支持 "xboard" 或 "v2board"
+    "panels": {
+        "mihomo": [ // "mihomo" 可以是任意名称，但必须与本地 xboard.config.yaml 中的 provider 保持一致
+            {
+                "url": "https://user.lucius7.dev",
+                "description": "主面板"
+            }
+        ]
+    },
+    "onlineSupport": [
+        {
+            "url": "https://chat.example.com",
+            "description": "在线客服",
+            "apiBaseUrl": "https://chat.example.com",
+            "wsBaseUrl": "wss://chat.example.com"
+        }
+    ],
+    "proxy": [
+        {
+            "url": "socks5://username:password@proxy.example.com:38769",
+            "description": "代理服务器(强烈建议配置)",
+            "protocol": "s5"
+        }
+    ]
+}
